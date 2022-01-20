@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Chrome Browser Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="PurchaseOrderTestScript.CreatedOrderDropdownStatusTest">
+        <methods>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+          <include name="createdOrder"/>
+        </methods>
+      </class> <!-- PurchaseOrderTestScript.CreatedOrderDropdownStatusTest -->
+    </classes>
+  </test> <!-- Chrome Browser Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Firefox Browser Test(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="PurchaseOrderTestScript.CancelledOrderDropdownStatusTest">
+        <methods>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="cancelledOrder"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+        </methods>
+      </class> <!-- PurchaseOrderTestScript.CancelledOrderDropdownStatusTest -->
+      <class name="PurchaseOrderTestScript.ReceivedShipmentOrderDropdownStatusTest">
+        <methods>
+          <include name="configBS"/>
+          <include name="configBC"/>
+          <include name="configAS"/>
+          <include name="configAC"/>
+          <include name="receivedShipmentOrder"/>
+          <include name="configBM"/>
+          <include name="configAM"/>
+        </methods>
+      </class> <!-- PurchaseOrderTestScript.ReceivedShipmentOrderDropdownStatusTest -->
+    </classes>
+  </test> <!-- Firefox Browser Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
